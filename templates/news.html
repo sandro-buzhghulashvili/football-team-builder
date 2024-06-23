@@ -1,0 +1,20 @@
+{% block extra_css %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/news.css') }}"
+/>
+{% endblock %} {% extends 'base.html' %} {% block body %}
+<h1 class="article-title">Articles</h1>
+
+<div class="articles">
+  {% for article in articles %}
+  <div class="article">
+    <img src="{{ article.img }}" alt="Article Image" />
+
+    <h2>
+      <a href="{{ article.url }}" target="_blank">{{ article["title"] }}</a>
+    </h2>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

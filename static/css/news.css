@@ -1,0 +1,41 @@
+body {
+  background-color: #52b788;
+}
+
+.article-title {
+  width: fit-content;
+  margin: 50px auto;
+  color: white;
+}
+
+.articles {
+  margin-top: 200px;
+
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 50px;
+}
+
+.article {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+}
+.article img {
+  width: 200px;
+  height: 200px;
+}
+
+.article a {
+  color: white;
+}

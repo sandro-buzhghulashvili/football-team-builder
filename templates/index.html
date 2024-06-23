@@ -1,7 +1,23 @@
-{% extends 'base.html' %} {% block title %}My Custom Title{% endblock %} {%
-block body %}
-<div>
-  <h1>Custom Content</h1>
-  <p>Additional content goes here.</p>
+{% extends 'base.html' %} {% block title %}Dream Team{% endblock %} {%block
+extra_css%}
+<link
+  rel="stylesheet"
+  href="{{url_for('static', filename='css/main.css')}}"
+/>{%endblock%} {% block body %}
+<div class="main">
+  <div class="intro">
+    <h1>Dream Team</h1>
+    <p>
+      Welcome to Dream Team, your ultimate football team building companion!
+      Whether you're a coach, a player, or an enthusiast, our app is designed to
+      help you create, manage, and optimize your dream team.
+    </p>
+    <div style="display: flex; gap: 20px; justify-content: center">
+      <a href="/builder"> Start Building </a>
+      <a href="/teams"> Discover other teams </a>
+      <a href="/news"> News </a>
+    </div>
+  </div>
 </div>
+
 {% endblock %}

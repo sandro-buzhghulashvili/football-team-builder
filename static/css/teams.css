@@ -1,0 +1,49 @@
+.teams {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #52b788;
+  height: 100vh;
+}
+
+.teams h1 {
+  margin-bottom: 50px;
+  font-size: 44px;
+  font-family: 'Playwrite NG Modern', cursive;
+  color: white;
+}
+
+.teams ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.teams ul li {
+  text-align: center;
+}
+
+.teams ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.team-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.team-details h1 {
+  margin-bottom: 50px;
+}
+
+.team-details h2 {
+  width: 70%;
+}

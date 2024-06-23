@@ -1,0 +1,13 @@
+{% block extra_css %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/teams.css') }}"
+/>
+{% endblock %} {% extends 'base.html' %} {% block body %}
+<div class="team-details">
+  <h1>Team Details - {{ team[1] }}</h1>
+
+  <h2>Squad: {{team[2]}}</h2>
+</div>
+
+<a href="{{ url_for('teams') }}">Back to Teams List</a>{% endblock %}

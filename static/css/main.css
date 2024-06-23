@@ -1,0 +1,53 @@
+.main {
+  background-image: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.intro {
+  animation: intro-animation 1s ease;
+  text-align: center;
+  color: white;
+  width: 50%;
+}
+.intro h1 {
+  font-family: 'Playwrite NG Modern', cursive;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.intro p {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 100px;
+}
+.intro a {
+  padding: 20px 40px;
+  display: inline-block;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #fff;
+  color: #1b4332;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.intro a:hover {
+  background-color: #52b788;
+  color: white;
+}
+
+@keyframes intro-animation {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
